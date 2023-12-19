@@ -14,7 +14,7 @@ int main(){
 		cin>>mark2;
 		cout<<"Mark 3 - ";
 		cin>>mark3;
-		
+
 		int averageMark = (mark1+mark2+mark3)/3;
 		cout<<"Average mark of Student "<<i<<" is "<<averageMark<<endl;
 		i++;
