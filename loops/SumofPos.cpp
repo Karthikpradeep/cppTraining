@@ -3,20 +3,24 @@
 using namespace std;
 
 int main(){
-	int num = 1,sum = 0;
-        while(num>0){
-                
-                cout<<"Enter the number - ";
-                cin>>num;
-		if(num<0){
-			break;
+	int num,sum = 0,i=1;
+	cout<<"Enter any number  -";
+	cin>>num;
+	while(i<=num){
+		int n;
+		cout<<"Enter number "<<i<<"- ";
+		cin>>n;
+		if(n>0){
+			sum+=n;
+			cout<<"sum of numbers till now "<<sum<<endl;
 		}
 		else{
-                	sum+=num;
+			cout<<"The entered number "<<n<<" is a negative number. Please enter a poitive number "<<endl;
+			num++;
 		}
-
-                cout<<"Sum of numbers is - "<<sum<<endl;
-        }
+		i++;
+	}
+	
 
         return 0;
 }
