@@ -5,9 +5,9 @@ using namespace std;
 int main(){
 	int day;
 
-	bool check = true;
+	bool isValidDay = true;
 	
-	while(check){
+	while(isValidDay){
 		cout<<"Enter the day of the week - ";
 		cin>>day;
 
@@ -15,7 +15,7 @@ int main(){
 			cout<<"!!! Please enter valid day of the week !!!"<<endl;
 		}
 		else{
-			check = false;
+			isValidDay = false;
 		}
 	}
 	switch(day){

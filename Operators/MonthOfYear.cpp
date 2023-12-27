@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
 	int month;
-	bool check = true;
-	while(check){
+	bool isValidMonth = true;
+	while(isValidMonth){
 		cout<<"Enter the month - ";
 		cin>>month;
 
@@ -13,7 +13,7 @@ int main(){
 			cout<<"!!! Invalid month !!!"<<endl;
 		}
 		else{
-			check = false;
+			isValidMonth = false;
 		}
 	}
 	if(month>=3 && month<=5){

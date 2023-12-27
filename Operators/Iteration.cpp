@@ -6,9 +6,9 @@ using namespace std;
 
 int main(){
 	int n,i=1;
-	bool check = true;
+	bool isValidInput = true;
 
-	while(check){
+	while(isValidInput){
 		cout<<"Enter the value of n -";
 		cin>>n;
 
@@ -17,15 +17,24 @@ int main(){
 			cout<<"Number should be greater than 10"<<endl;
 		}
 		else{
-			check = false;
+			isValidInput = false;
 		}
 	}
-	while(i<=n){
+	while( i<=n){
+		if(i==5){
+			i++;
+			continue;
+		}
+		cout<<"You are in iteration number - "<<i<<endl;
+		i++;
+	}
+	/*while(i<=n){
 		if(i!=5){
 			cout<<"You are in iteration number - "<<i<<endl;
 		}
 		i++;
-	}
+	}*/
+
 	return 0;
 }
 

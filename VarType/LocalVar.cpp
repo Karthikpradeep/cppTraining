@@ -3,9 +3,10 @@
 using namespace std;
 
 void print(int n){
-	int i;//local variable
-	for(i=1;i<=n;i++){
+	int i=1;//local variable
+	while(i!=6){
 		cout<<i<<" ";
+		i++;
 	}
 	cout<<endl;
 }
