@@ -13,7 +13,6 @@ int stringLength(string str){
 }
 
 int main(){
-	//string myString = "String length finder";
 	string myString;
 	cout<<"Enter the string to find the length - ";
 	getline(cin, myString);

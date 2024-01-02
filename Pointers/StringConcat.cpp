@@ -18,8 +18,8 @@ void stringConcat(char str1[],char str2[]){
 
 }
 int main(){
-	char str1[50], str2[50];
-	cout<<"Max character of 50 enter the strings"<<endl;
+	char str1[100], str2[100];
+	cout<<"Enter the strings with max character of 50"<<endl;
 	cout<<"Enter the string1 - ";
 	cin>>str1;
 	cout<<"Enter the string2 - ";

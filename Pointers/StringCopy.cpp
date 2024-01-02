@@ -9,7 +9,7 @@ string stringCopy(string str1,string str2){
         *dest = *src;
         *dest++;
         *src++;
-    }
+    }	
     return str2;
     
 }
