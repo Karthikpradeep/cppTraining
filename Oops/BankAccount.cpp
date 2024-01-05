@@ -67,7 +67,7 @@ int main(){
 	BankAccount myAccount = BankAccount(10111921,2000,"Karthik");
 	myAccount.display();
 	//myAccount.ownerName("Soorya"); since our variables are private they can't be modified outside of the class. To modify them getter and setter are used
-	//myAccount.display();
+	//myAccount.display(); by this we achieve encapsulation.
 	myAccount.setName("Soorya");
 	myAccount.display();
 }
