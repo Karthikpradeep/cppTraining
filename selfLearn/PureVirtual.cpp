@@ -2,26 +2,28 @@
 
 using namespace std;
 
-class Animals{
-	public:
-		virtual void display(){
-			cout<<"Animals have consciousness"<<endl;
-		}
+class Food{
+public:
+	virtual void taste() = 0;//pure virtual functions or do nothing functions
 };
 
-class Cat : public Animals{
-	public:
-		void display(){
-			cout<<"Cat's are curious"<<endl;
-		}
+class Biriyani : public Food{
+public:
+	void taste(){
+		cout<<"Biriyani is delicious "<<endl;
+	}
+};
+
+class Roti : public Food{
+public:
+	void taste(){
+		cout<<"Roti is dry"<<endl;
+	}
 };
 
 int main(){
-	Animals* ptr;
-	Animals a;
-	Cat c;
-	
-	ptr = &c;
-	ptr->display(); //if we are not using virtual fuction the display method of the base class will be called.
+	Roti r;
+	r.taste();
+	Biriyani b;
+	b.taste();
 }
-
