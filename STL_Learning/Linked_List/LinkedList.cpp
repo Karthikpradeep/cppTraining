@@ -1,3 +1,5 @@
+// In c++ forward_list is a singly linked list DS.
+
 #include<iostream>
 #include<limits>
 
@@ -120,7 +122,7 @@ int main(){
 		}
 		else{
 			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(),'\n');
+			cin.ignore(numeric_limits<streamsize>::max(),'\n');//to avoid infinite loop if user enter string as input
 			cout<<"Please enter numbers in the menu "<<endl;
 		}
 
