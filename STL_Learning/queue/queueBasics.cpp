@@ -26,6 +26,7 @@ int main(){
 		copy_nums.pop();
 
 	}
+
 	//printing elements in the front and back
 	cout<<"\nElement in the front - "<<nums.front()<<endl;
 	cout<<"Element in the back - "<<nums.back()<<endl;
