@@ -11,7 +11,7 @@ int main(){
 	int clientSocket = socket(AF_INET,SOCK_STREAM,0);
 	if(clientSocket == -1){
 		cerr<<"!!! Error creating a socket !!!"<<endl;
-		return -1;
+		exit(EXIT_FAILURE);
 	}
 
 	//connect to server address
@@ -22,17 +22,20 @@ int main(){
 
 	if(connect(clientSocket,(sockaddr*)(&serverAddress),sizeof(serverAddress)) == -1){
 		cerr<<"!!! Error while connection to server !!!"<<endl;
-		return -1;
+		exit(EXIT_FAILURE);
 	}
 
 	cout<<"......Connected to server ......"<<endl;
 
 	//send data to server
-	const char* message = "Hello from client";
+	const int bufferSize = 1024;
+	char message[bufferSize];
+	cout<<"Enter message to sent to server - ";
+	cin.getline(message,bufferSize);
 	ssize_t bytesSent = send(clientSocket,message,strlen(message),0);
 	if (bytesSent == -1){
 		cout<<"!!! Error while sending data to server !!!"<<endl;
-		return -1;
+		exit(EXIT_FAILURE);
 	}
 	
 	//receive response from server

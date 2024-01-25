@@ -12,7 +12,7 @@ int main(){
 	int serverSocket = socket(AF_INET,SOCK_STREAM,0);
 	if(serverSocket == -1){
 		cerr<<"!!! Error while creating socket !!!"<<endl;
-		return -1;
+		exit(EXIT_FAILURE);
 	}
 
 	// Bind socket to a specific address and port
@@ -24,13 +24,13 @@ int main(){
 	if(bind(serverSocket, (sockaddr*) (&serverAddress), sizeof(serverAddress)) == -1){
 		cerr<<"Error occured while binding socket"<<endl;
 		close(serverSocket);
-		return -1;
+		exit(EXIT_FAILURE);
 	}
 
 	//listen for incoming connection
 	if(listen(serverSocket,5) == -1){
 		cerr<<"!!! Error listening for connection !!!"<<endl;
-		return -1;
+		exit(EXIT_FAILURE);
 	}
 	cout<<"......Server listening on port 8888......"<<endl;
 
@@ -41,7 +41,7 @@ int main(){
 	if(clientSocket == -1){
 		cerr<<"!!! Error Accepting client !!!"<<endl;
 		close(serverSocket);
-		return -1;
+		exit(EXIT_FAILURE);
 	}
 	cout<<"......Connection established with client......"<<endl;
 
@@ -55,7 +55,10 @@ int main(){
 		buffer[bytesRead] = '\0';
 		cout<<"Received message from client - "<<buffer<<endl;
 		//send response to client
-		const char* response = "Hello from server";
+		const int bufferSize = 1024;
+		char response[bufferSize];
+		cout<<"Enter response to client - ";
+		cin.getline(response,bufferSize);
 		ssize_t byteSent = send(clientSocket, response, strlen(response),0);
 		if(byteSent == -1){
 			cerr<<"!!!Error while sending response to client !!!"<<endl;
