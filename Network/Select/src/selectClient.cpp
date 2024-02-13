@@ -42,7 +42,7 @@ int main() {
 
     // Send the user name to the server
     send(client_socket, str, strlen(str), 0);
-
+    cout<<"Type bye to exit the group chat \n"<<endl;
     while (true) {
         FD_ZERO(&rset);
         FD_SET(0, &rset); // Add stdin (user input) to the set
@@ -52,7 +52,7 @@ int main() {
 
         if (FD_ISSET(0, &rset)) {
             // User input is ready
-            fgets(buffer, BUFFER_SIZE, stdin);
+            fgets(buffer, BUFFER_SIZE, stdin);//read the data
             // Send user name along with the data to the server
             memset(strname, 0, BUFFER_SIZE);
             strcat(strname, str);
@@ -60,6 +60,9 @@ int main() {
             if (strlen(buffer) != 0) {
                 strcat(strname, buffer);
                 send(client_socket, strname, strlen(strname), 0);
+		if(strcmp(buffer,"bye")==0){
+			exit(EXIT_SUCCESS);
+		}
 	
             }
         }

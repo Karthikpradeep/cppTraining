@@ -10,7 +10,8 @@ int main(){
 	getline(cin,getUrl);
 	string getResponse = httpClient.getHttp(getUrl);
 	cout<<"GET response is - "<<getResponse<<endl;
-
+	
+	//post request
 	string postUrl;
 	cout<<"Enter the url for POST request - ";
 	getline(cin, postUrl);
