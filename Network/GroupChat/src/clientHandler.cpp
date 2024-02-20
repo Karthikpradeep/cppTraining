@@ -47,7 +47,7 @@ void ClientNetworkHandler::handleCommunication() {
 
     while (true) {
         FD_ZERO(&rset);
-        FD_SET(0, &rset); // Add stdin (user input) to the set
+        FD_SET(0, &rset); 
         FD_SET(clientSocket, &rset); // Add the client socket to the set
 
         select(clientSocket + 1, &rset, NULL, NULL, NULL);
