@@ -1,37 +1,37 @@
 #include <headers.h>
 
 using namespace sql;
-
+using namespace std;
 int main() {
-    sql::mysql::MySQL_Driver *driver;
-    sql::Connection *con;
+    mysql::MySQL_Driver *driver;
+    Connection *con;
 
     try {
         // Create a MySQL driver instance
-        driver = sql::mysql::get_mysql_driver_instance();
+        driver = mysql::get_mysql_driver_instance();
 
         // Create a connection
-        con = driver->connect("localhost:3306", "root","wordpass123");
+        con = driver->connect("localhost:3306", "root","wordPass123");
 
         // Connect to the MySQL database
         con->setSchema("cars");
 
         // Execute a simple query
-        sql::Statement *stmt = con->createStatement();
-        sql::ResultSet *res = stmt->executeQuery("SELECT CarRank,CarName,QuaterMileTime_sec FROM QuaterMile");
+        Statement *stmt = con->createStatement();
+        ResultSet *res = stmt->executeQuery("SELECT CarRank,CarName,QuaterMileTime_sec,TopSpeed_mph FROM QuaterMile");
 
         // Process the result set
-	std::cout<<"CarRank\t"<<"CarName\t"<<"\tQuater mile time"<<std::endl;
+	cout<<"CarRank\t"<<"CarName\t"<<"\tQuater mile time"<<"\tTopSpeed"<<endl;
         while (res->next()) {
-            std::cout << "   " << res->getInt(1) << "\t" << res->getString(2) <<"\t"<< res->getDouble(3) << std::endl;
+            cout << "   " << res->getInt(1) << "\t" << res->getString(2) <<"\t"<< res->getDouble(3)<<"\t\t"<<res->getInt(4) <<endl;
         }
 
         delete res;
         delete stmt;
         delete con;
 
-    } catch (sql::SQLException &e) {
-        std::cerr << "SQLException: " << e.what() << std::endl;
+    } catch (SQLException &e) {
+        cerr << "SQLException: " << e.what() << endl;
     }
 
     return 0;
