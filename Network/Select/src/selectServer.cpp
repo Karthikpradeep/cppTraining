@@ -53,7 +53,7 @@ int main() {
         if (FD_ISSET(serverSocket, &readSet)) {	//check if server socket is in readset
             sockaddr_in clientAddress;
             socklen_t clientSize = sizeof(clientAddress);
-            int clientSocket = accept(serverSocket, (sockaddr*)&clientAddress, &clientSize);	//accepting new incoming connection on server socket and store the FD as clientSocket
+            int clientSocket = accept(serverSocket, (sockaddr*)&clientAddress, &clientSize);//accepting new incoming connection on server socket and store the FD as clientSocket
             if (clientSocket == -1) {
                 perror("!!! Error while accepting connection !!!");
                 exit(EXIT_FAILURE);
