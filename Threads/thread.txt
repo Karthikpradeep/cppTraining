@@ -1,0 +1,53 @@
+
+mutex - Mutual exclusion
+
+Race condition - It happens when two or more threads or process try to change a common data at the same time.
+		  If there is race condition we need to protect that section and this section is called critical section.
+		
+Mutex is used to avoid race condition.
+we use lock() and unlock() to avoid race conddition.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UNIQUE LOCK -
+	-> The class unique_lock() is a mutex ownership wrapper.
+	-> It allows :-
+			1. Can have different locking strategies.
+			2. Time constrained attempts at locking(try_lock for,try_lock until),
+			3. recursive locking
+			4. transfer of lock ownership(move not copy)
+			5. condition variables.
+locking strategies -
+	1. defer_lock -> do not acquire the ownership of the mutex.
+	2. try_to _lock -> try to acquire the ownership of the mutex without blocking.
+	3. adopt_block -> assume the calling thread already has ownership of the mutex.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CONDITIONAL VARIABLES -
+	-> Notify other threads.
+	-> Waiting for some condition.
+
+1. Condition Variable allows running threads to wait on some conditions and once those conditions are met the waiting thread is notified by:
+	-> notify_one();
+	-> notify_all();
+2. You need mutex to use CV.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEADLOCK - A deadlock situation occurs when two or more blocked threads are waiting for each other to release a resource such as a mutex, 	   which never gets released, resulting in the threads stopping their execution and waiting for an indefinite amount of time.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Thread Synchronisation
+	-> Thread syncronisation is to access critical section.
+	-> Critical section is one or collection of program statements which should be executed by only a single thread at a time.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Thread promise and future.
+	promise - Used to set values or exceptions.
+	future - Used to get values from promise.
+		 Ask promise if the value is available.
+		 wait for promise
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Producer Consumer Problem
+
+
+
+
+
+
+
