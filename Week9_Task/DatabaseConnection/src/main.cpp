@@ -1,8 +1,13 @@
 #include <ConnectionHeader.h>
 
-int main(){
+int main(int argc, char* argv[]){
 	try{
-		DatabaseConnector dbCnt;
+		if(argc != 2){
+			cerr<<"Usage: "<<argv[0]<<"arguments"<<endl;
+			return 1;
+		}
+		string filePath = argv[1];
+		DatabaseConnector dbCnt(filePath);
 		dbCnt.connectToDatabase();
 		dbCnt.queryExecution();
 		}

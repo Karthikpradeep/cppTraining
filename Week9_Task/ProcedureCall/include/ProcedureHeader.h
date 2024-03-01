@@ -22,7 +22,7 @@ class ProcedureCall{
 		sql::PreparedStatement *stmt;
 
 	public:
-		ProcedureCall();
+		ProcedureCall(string filePath);
 		~ProcedureCall();
 		void connectToDatabase();
 		void callStoredProcedure();

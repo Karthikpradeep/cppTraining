@@ -1,8 +1,9 @@
 #include <ConnectionHeader.h>
 
-DatabaseConnector::DatabaseConnector(){
+DatabaseConnector::DatabaseConnector(string filePath){
 	try{
-		YAML::Node config = YAML::LoadFile("./config/data.yaml");
+		cout<<filePath<<endl;
+		YAML::Node config = YAML::LoadFile(filePath);
 		host = config["host"].as<string>();
 		user = config["username"].as<string>();
 		pass = config["password"].as<string>();

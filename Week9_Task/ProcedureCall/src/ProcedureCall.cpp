@@ -1,8 +1,8 @@
 #include <ProcedureHeader.h>
 
-ProcedureCall::ProcedureCall() : con(nullptr) {
+ProcedureCall::ProcedureCall(string filePath) : con(nullptr) {
     try {
-        YAML::Node config = YAML::LoadFile("./config/credentials.yaml");
+        YAML::Node config = YAML::LoadFile(filePath);
         host = config["host"].as<std::string>();
         user = config["username"].as<std::string>();
         pass = config["password"].as<std::string>();

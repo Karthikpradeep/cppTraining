@@ -1,0 +1,36 @@
+Static library
+
+Step 1 - Object file creation of implementation file
+	  g++ -I include/ -c src/OddEvenSum.cpp -o obj/OddEvenSum.o
+	  
+step 2 - Create an static library using ar rcs libname obj_file
+	  ar rcs lib/lib_calcu.a obj/OddEvenSum.o 
+		all these objects will be grouped under same library. Static library created successfully.
+step 3 - Creation of object file for main.
+	  g++ -I include/ -c src/main.cpp -o obj/main.o
+step 4 - Link main program with static library.
+	  g++ -o bin/main obj/main.o -L. lib/lib_calcu.a 
+step 5 - execute 
+	  ./bin/main
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Dynamic Library
+
+step 1 - Object file creation of implementation file
+	  g++ -I include -c -fPIC src/OddEvenSum.cpp -o obj/OddEvenSum.o
+	  -c -> It will tell the compiler to stop after compilation process and don't perform linking
+	  -fPIC -> fPIC option in GCC enables the address of shared libraries to be relative so that the executable is independent of the 			position of libraries.
+
+step 2 - Now from library object file create a shared library so that we can link it later.
+	  g++ -shared -o lib/OddEven.so obj/OddEvenSum.o
+	  
+	  -shared -> Tell the compiler that this will produce a shared library.
+	  
+step 3 - Creating a object file for the main 
+	  g++ -I include/ -c src/main.cpp -o obj/main.o
+	  
+step 4 - Link our shared library to our main
+	  g++ -o bin/main obj/main.o -L. lib/libOddEven.so
+step 5 - Execute the main file
+	 

@@ -20,7 +20,7 @@ class DatabaseConnector{
 		sql::Connection* con;
 	
 	public:
-		DatabaseConnector();
+		DatabaseConnector(string filePath);
 		~DatabaseConnector();
 		void connectToDatabase();
 		void queryExecution();
