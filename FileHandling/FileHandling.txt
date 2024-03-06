@@ -1,0 +1,31 @@
+FILE HANDLING
+
+In C++, files are mainly dealt by using three classes fstream, ifstream, ofstream.
+
+-> ofstream: This Stream class signifies the output file stream and is applied to create files for writing information to files
+-> ifstream: This Stream class signifies the input file stream and is applied for reading information from files
+-> fstream: This Stream class can be used for both read and write from/to files.
+
+C++ provides us with the following operations in File Handling:
+
+ - Creating a file: open()
+ - Reading data: read()
+ - Writing new data: write()
+ - Closing a file: close()
+ 
+ Opening a File -
+ 	void open(const char* file_name,ios::openmode mode);
+ 	
+ 	modes -
+ 		default - ie if mode is not specified the it will be in both in and out mode.
+ 		in - Opens the file in read mode.
+ 		out - Opens the file in write mode.
+ 		binary - Opens the file in binary mode.
+ 		app - Opens the file and append all the outputs at the end
+ 		ate - Opens the file and moves the control to the end of the file.
+ 		trunk - Removes the data in existing file.
+
+	eg - fstream new_file;
+	     new_file.open(“newfile.txt”, ios::out);
+ 	
+ 	We can combine the different modes using or symbol | eg - new_file.open(“new_file.txt”, ios::out | ios::app );
