@@ -1,0 +1,49 @@
+DatabaseDetails:
+        ip: "localhost"
+        user: "root"
+        password: "Pass123@123"
+        database: "Exam"
+ConnectionDetails:
+        port: 8088
+        load: 1
+registration:
+        userReg: "/registration/userReg"
+        userLog: "/registration/userLogin"
+        userLogOut: "/registration/userLogOut"
+ExamDetals:
+        startExam: "/exam/begin"
+        answerService: "/exam/resp"
+        modifyServ: "/exam/modify"
+adminUrl: "/exam/admin"
+onInvalidJSON:
+        id: "ERROR101"
+        msg: "INVALID JSON FORMAT"
+        svcName: "Wrong Json"
+        svcGroup: "WebServer"
+onSuccessReg:
+        id: "101"
+        msg : "Success"
+onFailReg:
+        id: "401"
+        msg: "User already exist"
+questions:
+        "1. Who is the current prime minister of India?
+        [a. Narendra Modi b. Rajiv Gandhi c. Manmohan Singh d. Rahul Gandhi]
+        2. In what state is the Elephant Falls located?
+        [a.Meghalaya b.Kerala c.Tamilnadu d.Pakistan]
+        3. Which state has the largest population?
+        [a.Kerala b.Kolkata c.Tamilnadu d.Uttara Pradesh]
+        4. Which state has the largest area?
+        [a. Tamilnadu b.Madhya Pradesh c.Rajasthan d.Goa]
+        5. Which is the largest coffee-producing state of India?
+        [a.Karnataka b.Kerala c.Karnataka d.Telengana]
+        6. In which state is the main language Khasi?
+        [a.Karnataka b.Meghalaya c.Mizoram d.Assam]
+        7. India’s first-ever national police museum will be established in which city?
+        [a.Punjab b.Bangalore c.Bihar d.Delhi]
+        8. What is the state flower of Haryana?
+        [a.Sunflower b.Rose c.Lotus d.Orchid]
+        9. What is the major language spoken in Andhra Pradesh?
+        [a.Malayalam b.Tamil c.Telugu d.Hindi]
+        10. India is a federal union comprising twenty-nine states and how many union territories?
+        [a.1 b.7 c.6 d.5]"

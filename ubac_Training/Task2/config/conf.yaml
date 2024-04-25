@@ -1,0 +1,18 @@
+httpServer:
+        port: 8088
+        endUrl: "/init"
+        load: 1
+onInvalidJson:
+        id: "ERROR101"
+        msg: "Invalid JSON format"
+        svcName: "Web server"
+        svcGroup: "Language service"
+onPostProcessRequest:
+        id: "ER0001"
+        msg: "NOT FOUND"
+        key: "content"
+        value1: "list"
+        value2: "URL"
+        svcName: "WebServer"
+        svcGroup: "LanguageService"
+

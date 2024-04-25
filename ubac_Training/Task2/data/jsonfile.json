@@ -1,0 +1,411 @@
+{
+  "LangList": [
+    {
+      "lang": "English",
+      "dispLang": "English",
+      "chgMsg": "Language has been changed"
+    },
+    {
+      "lang": "Hindi",
+      "dispLang": "हिंदी",
+      "chgMsg": "भाषा बदल दी गई है"
+    },
+    {
+      "lang": "Marathi",
+      "dispLang": "मराठी",
+      "chgMsg": "भाषा बदलली आहे"
+    },
+    {
+      "lang": "Gujrati",
+      "dispLang": "ગુજરાતી",
+      "chgMsg": "ભાષા બદલવામાં આવી છે"
+    },
+    {
+      "lang": "Bengali",
+      "dispLang": "বাংলা",
+      "chgMsg": "ভাষা পরিবর্তন করা হয়েছে"
+    },
+    {
+      "lang": "Kannada",
+      "dispLang": "ಕನ್ನಡ",
+      "chgMsg": "ಭಾಷೆಯನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ"
+    },
+    {
+      "lang": "Malayalam",
+      "dispLang": "മലയാളം",
+      "chgMsg": "ഭാഷ മാറ്റി"
+    },
+    {
+      "lang": "Tamil",
+      "dispLang": "தமிழ்",
+      "chgMsg": "மொழி மாற்றப்பட்டுள்ளது"
+    },
+    {
+      "lang": "Telugu",
+      "dispLang": "తెలుగు",
+      "chgMsg": "భాష మార్చబడింది"
+    }
+  ],
+  "LangUrl": {
+    "English": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://laemobapp.angelbroking.com",
+          "omneURI": "https://mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://mprod-ws.angelbroking.com"
+        }
+      ]
+    },
+    "Hindi": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://hin-waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://hin-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://hin-waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://hin-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://hin-waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://hin-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://hin-waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://hin-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://hin-laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://hin-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://hin-laemobapp.angelbroking.com",
+          "omneURI": "https://hin-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://hin-mprod-ws.angelbroking.com"
+        }
+      ]
+    },
+    "Marathi": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://mar-waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://mar-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://mar-waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://mar-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://mar-waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://mar-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://mar-waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://mar-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://mar-laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://mar-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://mar-laemobapp.angelbroking.com",
+          "omneURI": "https://mar-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://mar-mprod-ws.angelbroking.com"
+        }
+      ]
+    },
+    "Gujrati": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://guj-waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://guj-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://guj-waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://guj-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://guj-waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://guj-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://guj-waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://guj-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://guj-laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://guj-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://guj-laemobapp.angelbroking.com",
+          "omneURI": "https://guj-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://guj-mprod-ws.angelbroking.com"
+        }
+      ]
+    },
+    "Bengali": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://ben-waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://ben-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://ben-waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://ben-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://ben-waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://ben-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://ben-waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://ben-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://ben-laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://ben-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://ben-laemobapp.angelbroking.com",
+          "omneURI": "https://ben-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://ben-mprod-ws.angelbroking.com"
+        }
+      ]
+    },
+    "Kannada": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://kan-waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://kan-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://kan-waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://kan-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://kan-waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://kan-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://kan-waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://kan-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://kan-laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://kan-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://kan-laemobapp.angelbroking.com",
+          "omneURI": "https://kan-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://kan-mprod-ws.angelbroking.com"
+        }
+      ]
+    },
+    "Malayalam": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://mal-waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://mal-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://mal-waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://mal-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://mal-waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://mal-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://mal-waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://mal-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://mal-laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://mal-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://mal-laemobapp.angelbroking.com",
+          "omneURI": "https://mal-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://mal-mprod-ws.angelbroking.com"
+        }
+      ]
+    },
+    "Tamil": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://tam-waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://tam-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://tam-waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://tam-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://tam-waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://tam-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://tam-waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://tam-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://tam-laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://tam-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://tam-laemobapp.angelbroking.com",
+          "omneURI": "https://tam-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://tam-mprod-ws.angelbroking.com"
+        }
+      ]
+    },
+    "Telugu": {
+      "key": "ServiceURLConfigNew",
+      "value": [
+        {
+          "id": "1",
+          "ftURI": "https://tel-waemobapp.angelbroking.com/Trade.svc",
+          "omneURI": "https://tel-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "2",
+          "ftURI": "https://tel-waemobapp.angelbroking.com/Login.svc",
+          "omneURI": "https://tel-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "3",
+          "ftURI": "https://tel-waemobapp.angelbroking.com/OMS.svc",
+          "omneURI": "https://tel-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "4",
+          "ftURI": "https://tel-waemobapp.angelbroking.com/MutualFund.svc",
+          "omneURI": "https://tel-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "5",
+          "ftURI": "https://tel-laemobapp.angelbroking.com/AngelService",
+          "omneURI": "https://tel-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "6",
+          "ftURI": "https://tel-laemobapp.angelbroking.com",
+          "omneURI": "https://tel-mprod-ws.angelbroking.com"
+        },
+        {
+          "id": "7",
+          "ftURI": "https://waemobapp.angelbroking.com/DeviceInit.svc",
+          "omneURI": "https://tel-mprod-ws.angelbroking.com"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+DatabaseDetails:
+        ip: "localhost"
+        user: "root"
+        password: "Pass123@123"
+        Database: "Organisation"
+ConnectionDetails:
+        port: 8088
+        load: 1
+SetDetails:
+        endUrl: "/setDetails"
+SearchDetails:
+        endUrl: "/searchDetails"
+GetDetails:
+        endUrl: "/getDetails"
+onInvalidJson:
+        id: "ERROR101"
+        msg: "INVALID JSON FORMAT"
+        svcName: "Wrong Json"
+        svcGroup: "WebServer"
+onValidSet:
+        id: "VAL101"
+        msg: "Values added to Database successfully"
+        svcName: "Setting Details"
+        svcGroup: "SetWebServer"
+onInvalidSet:
+        id: "ERROR101"
+        msg: "Failed to insert value"
+        svcName: "Setting Details"
+        svcGroup: "SetWebServer"
+onValidSearch:
+        id: "VAL102"
+        msg: "Employee found in the database"
+        svcName: "Searching Employee"
+        svcGroup: "SearchWebServer"
+onInvalidSearch:
+        id: "ERROR102"
+        msg: "Employee Not found in the database"
+        svcName: "Searching Employee"
+        svcGroup: "SearchWebServer"
+onValidDetails:
+        id: "VAL103"
+        msg: "Employee found and details printed"
+        svcName: "Employee Details"
+        svcGroup: "EmployeeDetailWebServer"
+onInvalidDetails:
+        id: "ERROR103"
+        msg: "Employee not found"
+        svcName: "Employee Details"
+        svcGroup: "EmployeeDetailWebServer"
+
